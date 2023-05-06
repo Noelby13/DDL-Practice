@@ -1,4 +1,4 @@
-﻿Public Class Ciudades
+﻿Public Class TblCiudad
     Dim _id As Integer
     Dim _nombre As String
     Dim _estado As Boolean

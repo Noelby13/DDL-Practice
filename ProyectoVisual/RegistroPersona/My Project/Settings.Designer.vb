@@ -27,6 +27,7 @@ Namespace My
         Private Shared addedHandler As Boolean
 
         Private Shared addedHandlerLockObject As New Object
+        Friend ReadOnly miConexion As Object
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
         Private Shared Sub AutoSaveSettings(ByVal sender As Global.System.Object, ByVal e As Global.System.EventArgs)

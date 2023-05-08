@@ -82,24 +82,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ADOConexion.Context.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ADOConexion.Context.tt</DependentUpon>
-    </Compile>
     <Compile Include="ADOConexion.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ADOConexion.edmx</DependentUpon>
     </Compile>
-    <Compile Include="ADOConexion.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ADOConexion.tt</DependentUpon>
-    </Compile>
     <Compile Include="Ciudad.vb">
       <DependentUpon>ADOConexion.tt</DependentUpon>
     </Compile>
+    <Compile Include="dao\DCiudades.vb" />
+    <Compile Include="dao\Module1.vb" />
     <Compile Include="entidades\TblCiudad.vb" />
     <Compile Include="entidades\TblPersona.vb" />
     <Compile Include="Form1.vb">
@@ -173,15 +165,25 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ADOConexion.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADOConexion.Context.tt</DependentUpon>
+    </Content>
     <Content Include="ADOConexion.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ADOConexion.Context.vb</LastGenOutput>
       <DependentUpon>ADOConexion.edmx</DependentUpon>
+      <LastGenOutput>ADOConexion.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ADOConexion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADOConexion.tt</DependentUpon>
     </Content>
     <Content Include="ADOConexion.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ADOConexion.edmx</DependentUpon>
-      <LastGenOutput>ADOConexion.vb</LastGenOutput>
+      <LastGenOutput>ADOConexion.cs</LastGenOutput>
     </Content>
     <Content Include="Imagenes\addButton24px.png" />
     <Content Include="Imagenes\cleanButton.png" />

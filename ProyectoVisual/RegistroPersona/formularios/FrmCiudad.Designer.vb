@@ -29,11 +29,11 @@ Partial Class FrmCiudad
         Me.BtnEditar = New System.Windows.Forms.ToolStripButton()
         Me.BtnEliminar = New System.Windows.Forms.ToolStripButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TxtId = New System.Windows.Forms.TextBox()
-        Me.TxtNombre = New System.Windows.Forms.TextBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.TxtNombre = New System.Windows.Forms.TextBox()
+        Me.TxtId = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GbRegistro = New System.Windows.Forms.GroupBox()
         Me.DgvRegistros = New System.Windows.Forms.DataGridView()
         Me.ToolStrip1.SuspendLayout()
@@ -44,10 +44,11 @@ Partial Class FrmCiudad
         '
         'ToolStrip1
         '
+        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BtnNuevo, Me.BtnGuardar, Me.BtnEditar, Me.BtnEliminar})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(780, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1040, 27)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -57,7 +58,7 @@ Partial Class FrmCiudad
         Me.BtnNuevo.Image = Global.RegistroPersona.My.Resources.Resources.addButton24px
         Me.BtnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.BtnNuevo.Name = "BtnNuevo"
-        Me.BtnNuevo.Size = New System.Drawing.Size(23, 22)
+        Me.BtnNuevo.Size = New System.Drawing.Size(29, 24)
         Me.BtnNuevo.Text = "Nuevo"
         '
         'BtnGuardar
@@ -66,7 +67,7 @@ Partial Class FrmCiudad
         Me.BtnGuardar.Image = Global.RegistroPersona.My.Resources.Resources.save
         Me.BtnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.BtnGuardar.Name = "BtnGuardar"
-        Me.BtnGuardar.Size = New System.Drawing.Size(23, 22)
+        Me.BtnGuardar.Size = New System.Drawing.Size(29, 24)
         Me.BtnGuardar.Text = "Guardar"
         '
         'BtnEditar
@@ -75,7 +76,7 @@ Partial Class FrmCiudad
         Me.BtnEditar.Image = Global.RegistroPersona.My.Resources.Resources.editButton
         Me.BtnEditar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.BtnEditar.Name = "BtnEditar"
-        Me.BtnEditar.Size = New System.Drawing.Size(23, 22)
+        Me.BtnEditar.Size = New System.Drawing.Size(29, 24)
         Me.BtnEditar.Text = "Editar"
         '
         'BtnEliminar
@@ -84,7 +85,7 @@ Partial Class FrmCiudad
         Me.BtnEliminar.Image = Global.RegistroPersona.My.Resources.Resources.deleteButton
         Me.BtnEliminar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(23, 22)
+        Me.BtnEliminar.Size = New System.Drawing.Size(29, 24)
         Me.BtnEliminar.Text = "Eliminar"
         '
         'GroupBox1
@@ -95,63 +96,72 @@ Partial Class FrmCiudad
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 37)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 46)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(747, 198)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(996, 244)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Ciudad"
         '
-        'Label1
+        'CheckBox1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(58, 37)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(30, 20)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "ID:"
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(527, 44)
+        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(88, 29)
+        Me.CheckBox1.TabIndex = 2
+        Me.CheckBox1.Text = "Activo"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'TxtNombre
+        '
+        Me.TxtNombre.Location = New System.Drawing.Point(123, 91)
+        Me.TxtNombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtNombre.Name = "TxtNombre"
+        Me.TxtNombre.Size = New System.Drawing.Size(755, 30)
+        Me.TxtNombre.TabIndex = 3
+        '
+        'TxtId
+        '
+        Me.TxtId.Location = New System.Drawing.Point(124, 42)
+        Me.TxtId.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtId.Name = "TxtId"
+        Me.TxtId.ReadOnly = True
+        Me.TxtId.Size = New System.Drawing.Size(361, 30)
+        Me.TxtId.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(20, 77)
+        Me.Label2.Location = New System.Drawing.Point(27, 95)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(69, 20)
+        Me.Label2.Size = New System.Drawing.Size(87, 25)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Nombre:"
         '
-        'TxtId
+        'Label1
         '
-        Me.TxtId.Location = New System.Drawing.Point(93, 34)
-        Me.TxtId.Name = "TxtId"
-        Me.TxtId.ReadOnly = True
-        Me.TxtId.Size = New System.Drawing.Size(272, 26)
-        Me.TxtId.TabIndex = 1
-        '
-        'TxtNombre
-        '
-        Me.TxtNombre.Location = New System.Drawing.Point(92, 74)
-        Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(567, 26)
-        Me.TxtNombre.TabIndex = 3
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(395, 36)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(71, 24)
-        Me.CheckBox1.TabIndex = 2
-        Me.CheckBox1.Text = "Activo"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(77, 46)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(37, 25)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "ID:"
         '
         'GbRegistro
         '
         Me.GbRegistro.Controls.Add(Me.DgvRegistros)
         Me.GbRegistro.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GbRegistro.Location = New System.Drawing.Point(13, 254)
+        Me.GbRegistro.Location = New System.Drawing.Point(17, 313)
+        Me.GbRegistro.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GbRegistro.Name = "GbRegistro"
-        Me.GbRegistro.Size = New System.Drawing.Size(749, 261)
+        Me.GbRegistro.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GbRegistro.Size = New System.Drawing.Size(999, 321)
         Me.GbRegistro.TabIndex = 2
         Me.GbRegistro.TabStop = False
         Me.GbRegistro.Text = "Registros Guardados: 0"
@@ -164,21 +174,24 @@ Partial Class FrmCiudad
         Me.DgvRegistros.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DgvRegistros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgvRegistros.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DgvRegistros.Location = New System.Drawing.Point(3, 22)
+        Me.DgvRegistros.Location = New System.Drawing.Point(4, 27)
+        Me.DgvRegistros.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DgvRegistros.Name = "DgvRegistros"
         Me.DgvRegistros.ReadOnly = True
+        Me.DgvRegistros.RowHeadersWidth = 51
         Me.DgvRegistros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DgvRegistros.Size = New System.Drawing.Size(743, 236)
+        Me.DgvRegistros.Size = New System.Drawing.Size(991, 290)
         Me.DgvRegistros.TabIndex = 0
         '
         'FrmCiudad
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(780, 527)
+        Me.ClientSize = New System.Drawing.Size(1040, 649)
         Me.Controls.Add(Me.GbRegistro)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ToolStrip1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FrmCiudad"
         Me.Text = "Registro Ciudad"
         Me.ToolStrip1.ResumeLayout(False)

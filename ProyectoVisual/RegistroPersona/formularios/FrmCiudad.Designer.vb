@@ -22,7 +22,7 @@ Partial Class FrmCiudad
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.BtnNuevo = New System.Windows.Forms.ToolStripButton()
         Me.BtnGuardar = New System.Windows.Forms.ToolStripButton()
@@ -97,9 +97,9 @@ Partial Class FrmCiudad
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(16, 46)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(996, 244)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
@@ -109,7 +109,7 @@ Partial Class FrmCiudad
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Location = New System.Drawing.Point(527, 44)
-        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(88, 29)
         Me.CheckBox1.TabIndex = 2
@@ -119,7 +119,7 @@ Partial Class FrmCiudad
         'TxtNombre
         '
         Me.TxtNombre.Location = New System.Drawing.Point(123, 91)
-        Me.TxtNombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtNombre.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtNombre.Name = "TxtNombre"
         Me.TxtNombre.Size = New System.Drawing.Size(755, 30)
         Me.TxtNombre.TabIndex = 3
@@ -127,7 +127,7 @@ Partial Class FrmCiudad
         'TxtId
         '
         Me.TxtId.Location = New System.Drawing.Point(124, 42)
-        Me.TxtId.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtId.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtId.Name = "TxtId"
         Me.TxtId.ReadOnly = True
         Me.TxtId.Size = New System.Drawing.Size(361, 30)
@@ -158,9 +158,9 @@ Partial Class FrmCiudad
         Me.GbRegistro.Controls.Add(Me.DgvRegistros)
         Me.GbRegistro.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GbRegistro.Location = New System.Drawing.Point(17, 313)
-        Me.GbRegistro.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GbRegistro.Margin = New System.Windows.Forms.Padding(4)
         Me.GbRegistro.Name = "GbRegistro"
-        Me.GbRegistro.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GbRegistro.Padding = New System.Windows.Forms.Padding(4)
         Me.GbRegistro.Size = New System.Drawing.Size(999, 321)
         Me.GbRegistro.TabIndex = 2
         Me.GbRegistro.TabStop = False
@@ -170,12 +170,12 @@ Partial Class FrmCiudad
         '
         Me.DgvRegistros.AllowUserToAddRows = False
         Me.DgvRegistros.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.DgvRegistros.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DgvRegistros.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
         Me.DgvRegistros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgvRegistros.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DgvRegistros.Location = New System.Drawing.Point(4, 27)
-        Me.DgvRegistros.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DgvRegistros.Margin = New System.Windows.Forms.Padding(4)
         Me.DgvRegistros.Name = "DgvRegistros"
         Me.DgvRegistros.ReadOnly = True
         Me.DgvRegistros.RowHeadersWidth = 51
@@ -191,7 +191,7 @@ Partial Class FrmCiudad
         Me.Controls.Add(Me.GbRegistro)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ToolStrip1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmCiudad"
         Me.Text = "Registro Ciudad"
         Me.ToolStrip1.ResumeLayout(False)

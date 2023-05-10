@@ -3,6 +3,9 @@
     Dim _nombre As String
     Dim _estado As Boolean
 
+    Public Sub New()
+
+    End Sub
     Public Sub New(id As Integer, nombre As String, estado As Boolean)
         _id = id
         _nombre = nombre
